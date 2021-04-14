@@ -8,7 +8,7 @@ void display(struct records *init, struct records *flow)
 
     while(flow)
     {
-        printf("\n\n Passport Number : %-6s",flow->passport);
+        printf("\n\n Passport Number : %-6s",flow->p_no);
 		printf("\n   Name : %-15s",flow->name);
 		printf("\n   E-mail Address: %-15s",flow->email);
 		printf("\n   Seat Number: A-%d",flow->seat_num);
