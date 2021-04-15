@@ -8,20 +8,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-/**
- * @brief Structure containing details about passenger
- */
-
-struct records
-{
-    int P_ID;
-    char p_no[9];
-    char name[15];
-    int seat_num;
-    char email[15];
-    struct records *next;
-
-}*init,*flow;
 
 /**
  * @brief Node to traverse
