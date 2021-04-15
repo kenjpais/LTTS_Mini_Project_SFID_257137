@@ -3,7 +3,19 @@
 
 #include"flight_operations.h"
 
-void file_op(struct records *init, struct records *flow)
+struct records
+{
+    int P_ID;
+    char p_no[9];
+    char name[15];
+    int seat_num;
+    char email[15];
+    struct records *next;
+
+}*init,*flow;
+
+
+void file_op()
 {
     FILE *f = fopen("flight_records","w");
     if(!f)
