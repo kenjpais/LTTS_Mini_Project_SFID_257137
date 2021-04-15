@@ -2,7 +2,7 @@
 #include<stdlib.h>
 #include"flight_operations.h"
 
-void display(struct records *init, struct records *flow)
+void display()
 {
     flow = init;
 
