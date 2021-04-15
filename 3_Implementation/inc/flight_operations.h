@@ -18,44 +18,34 @@ struct records *trav;
 /**
 *  reserves the seat on flight
 * @param[in] x
-* @param[in] init initial node
-* @param[in] flow linked list
-* @return 
+* @return void
 */
-void reserve(int x,struct records *init, struct records *flow);
+void reserve();
 
 /**
 *  Takes in the details of user input
 * @param[in] x
-* @param[in] init initial node
-* @param[in] flow linked list
-* @return 
+* @return void
 */
-void user_input(struct records *init, struct records *flow);
+void user_input();
 
 /**
 *  saves the file
-* @param[in] init initial node
-* @param[in] flow linked list
-* @return 
+* @return void 
 */
-void file_op(struct records *init, struct records *flow);
+void file_op();
 
 
 /**
 * cancels flight booking
-* @param[in] init initial node
-* @param[in] flow linked list
-* @return 
+* @return void
 */
-void cancel(struct records *init, struct records *flow);
+void cancel();
 
 /**
 * displays flight booking
-* @param[in] init initial node
-* @param[in] flow linked list
-* @return 
+* @return void
 */
-void display(struct records *init, struct records *flow);
+void display();
 
 #endif  /* #define __FLIGHT_OPERATIONS_H__ */
