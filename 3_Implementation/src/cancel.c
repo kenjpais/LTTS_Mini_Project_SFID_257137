@@ -2,7 +2,18 @@
 #include<stdlib.h>
 #include"flight_operations.h"
 
-void cancel(struct records *init, struct records *flow)
+struct records
+{
+    char p_no[9];
+    char name[15];
+    int seat_num;
+    char email[15];
+    struct records *next;
+
+}*init,*flow;
+
+
+void cancel()
 {
 	flow =init;  
 	
