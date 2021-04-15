@@ -17,7 +17,6 @@ void tearDown()
 
 struct records
 {
-    int P_ID;
     char p_no[9];
     char name[15];
     int seat_num;
