@@ -2,6 +2,18 @@
 #include<stdlib.h>
 #include"flight_operations.h"
 
+struct records
+{
+    char p_no[9];
+    char name[15];
+    int seat_num;
+    char email[15];
+    struct records *next;
+
+}*init,*flow;
+
+
+
 void display()
 {
     flow = init;
