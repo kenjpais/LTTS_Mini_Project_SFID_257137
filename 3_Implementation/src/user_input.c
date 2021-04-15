@@ -17,10 +17,21 @@ struct records
 
 void user_input(struct records *init, struct records *flow)
 {
+	int age=0;
+    printf("\nEnter your Age: \n");
+    scanf("%d",&age);
+	if(age<5 || age>80)
+	{
+		printf("\n Sorry, passenger is not suitable for air travel\n");
+		return;
+	}
+	else
+{
     printf("\n\t Passport Number:\n");
-    scanf("%s",&flow->p_no);
+    scanf("%s",flow->p_no);
     printf("\n\t Name:\n");
-    scanf("%s",&flow->name);
+    scanf("%s",flow->name);
     printf("\n\t Enter your email address:");
-	scanf("%s",&flow->email);
+    scanf("%s",flow->email);
+	}
 }
