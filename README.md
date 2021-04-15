@@ -6,10 +6,10 @@
 
 |Folder|Description|
 |------|-----------|
-|1_Requirements|Documents detailing requirements and research|
-|2_Design|Documents specifying design details|
-|3_Implementation|	All code and documentation|
-|4_Test_plan|Documents with test plans and procedures|
+|1_Requirements|Requirements,scope,research|
+|2_Design|Design specifications|
+|3_Implementation|Source code with documentation|
+|4_Test_plan|Testing|
 
 
 
