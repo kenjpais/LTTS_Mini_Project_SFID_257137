@@ -12,8 +12,8 @@ Earlier experiences show manual monitoring of employee enquiries about their loa
 
 Minor & major problems like:
 
-	* Maintaining database*
-	* Record entry*
+	* Maintaining database
+	* Record entry
 
 To implement databases, in one such primitive way is a file handling
      mechanism
