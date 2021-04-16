@@ -3,14 +3,6 @@
 # Flight Booking System
 ![flightimage](https://user-images.githubusercontent.com/81014114/114928093-ce8ec480-9e4f-11eb-8c69-6436a33d4bc9.jpg)
 
-|Build|Code Quality|Unity|Git Inspector|Valgrind|
-|-----|------------|-----|-------------|--------|
-https://github.com/kenjpais/LTTS_Mini_Project_SFID_257137/actions/workflows/c-build.yml|
-
-
-
-
-
 
 
 # Folder Structure
