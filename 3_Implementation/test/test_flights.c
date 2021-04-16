@@ -20,6 +20,7 @@ struct records
     char p_no[9];
     char name[15];
     int seat_num;
+    int diet;
     char email[15];
 	
 }flow;
