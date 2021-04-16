@@ -20,7 +20,7 @@ struct records
  */
 
 struct records *trav;
-
+void user_input();
 
 void book(int x) 
 {
