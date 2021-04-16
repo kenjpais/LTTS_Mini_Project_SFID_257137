@@ -8,7 +8,7 @@ struct records
     char p_no[9];
     char name[15];
     int seat_num;
-    char email[15];
+    char email[40];
     int diet;
     struct records *next;
 
