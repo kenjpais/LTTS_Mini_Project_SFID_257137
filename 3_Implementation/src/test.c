@@ -1,7 +1,6 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include<string.h>
-
 #include"../inc/flight_operations.h"
 
 struct records
@@ -9,6 +8,7 @@ struct records
     char p_no[9];
     char name[15];
     int seat_num;
+    int diet;
     char email[40];
     struct records *next;
 
