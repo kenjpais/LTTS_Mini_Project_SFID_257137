@@ -30,27 +30,31 @@ void book(int x)
 		init = flow = (struct records*)malloc(sizeof(struct records));
 
 
-		user_input(init,flow);
+		user_input();
         flow->next = NULL; 
 		printf("\n\t Booking successful!");
 		printf("\n\t Your seat number is: Seat A-%d", x);
 		flow->seat_num = x;
 		return; 
+		free(init);
+		free(flow);
+
 	}
-	else if (x > 15) // FULL SEATS
+	else if (x > 15) 
 	{
-		printf("\n\t\t Sorry, Seats are Full");
+		printf("\n\t Sorry, Seats are Full\n");
 		return;
 	}
 	else
 	{                                 
 		
-		while (flow ->next)
+		while(flow ->next)
          flow=flow->next;
 		
-        flow->next = (struct record*)malloc(sizeof(struct record));
+        flow->next = (struct records*)malloc(sizeof(struct records));
 		flow = flow->next;
 		user_input();
+
 		flow->next = NULL;
 		printf("\n\t Seat booking succesful!");
 		printf("\n\t Seat number: Seat A-%d", x);
@@ -63,17 +67,17 @@ void cancel()
 {
 	flow =init;  
 	
-	char p_no[6];
+	char p_no[7];
 
-	printf("\n\n Enter passort number to delete record:");
-	scanf("%s",&p_no);
+	printf("\n\nTo delete record: Enter the passport number:\n");
+	scanf("%s",p_no);
     
     if(strcmp(init->p_no, p_no) == 0)
 	{
 		trav = init;
 		init = init->next;
 		free(trav); 
-		printf(" Booking has been deleted");
+		printf("\n Booking has been deleted\n");
 		return;
 
 	}
@@ -85,7 +89,7 @@ void cancel()
 			trav = flow->next;
 			flow->next = flow->next->next;
 			free(trav);	
-			printf("Other records have been deleted ");
+			printf("\nOther records have been deleted\n ");
 			return;
 		}
 		flow = flow -> next;
@@ -93,4 +97,5 @@ void cancel()
 	printf("\nWrong passport number\n");
 
 }
+
 
