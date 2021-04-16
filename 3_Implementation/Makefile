@@ -13,11 +13,10 @@ src/display.c\
 
 
 # All test source files
-TEST_SRC = src/test.c\
-src/user_input.c\
+TEST_SRC = src/user_input.c\
 src/book.c\
-src/display.c\
 src/file_op.c\
+src/display.c\
 test/test_flights.c\
 unity/unity.c\
 
