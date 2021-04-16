@@ -27,12 +27,13 @@ void book(int x)
 	flow = init;
 	if (init == NULL)
 	{
+		//allocates memory for user 1
 	
 		init = flow = (struct records*)malloc(sizeof(struct records));
 
 
 		user_input();
-        flow->next = NULL; 
+                flow->next = NULL; 
 		printf("\n\t Booking successful!");
 		printf("\n\t Your seat number is: Seat A-%d", x);
 		flow->seat_num = x;
@@ -47,12 +48,13 @@ void book(int x)
 		return;
 	}
 	else
-	{                                 
+	{        
 		
+		//memory allocation for consecutive user
 		while(flow ->next)
-         flow=flow->next;
+                     flow=flow->next;
 		
-        flow->next = (struct records*)malloc(sizeof(struct records));
+                flow->next = (struct records*)malloc(sizeof(struct records));
 		flow = flow->next;
 		user_input();
 
