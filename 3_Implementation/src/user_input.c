@@ -15,7 +15,7 @@ struct records
 
 
 
-void user_input(struct records *init, struct records *flow)
+void user_input()
 {
 	int age=0;
     printf("\nEnter your Age: \n");
