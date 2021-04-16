@@ -1,5 +1,4 @@
 #include<stdio.h>
-#include<string.h>
 #include<stdlib.h>
 
 #include"flight_operations.h"
@@ -13,106 +12,35 @@ struct records
     int diet;
     struct records *next;
 
-}*init,*flow;
+}*flow;
+
 
 /**
- * @brief Node to traverse
- * 
- */
-
-struct records *trav;
-void user_input();
-
-/**
- * @brief Function to book a seat
- * @param[in] x 
- * @return void
- */
-
-void book(int x) 
-{
-	flow = init;
-	if (init == NULL)
-	{
-		//allocates memory for user 1
-	
-		init = flow = (struct records*)malloc(sizeof(struct records));
-
-
-		user_input();
-                flow->next = NULL; 
-		printf("\n\t Booking successful!");
-		printf("\n\t Your seat number is: Seat A-%d", x);
-		flow->seat_num = x;
-		return; 
-		free(init); //deallocation
-		free(flow);
-
-	}
-	else if (x > 15) //maximum capacity reached
-	{
-		printf("\n\t Sorry, Seats are Full\n");
-		return;
-	}
-	else
-	{        
-		
-		//memory allocation for consecutive user
-		while(flow ->next)
-                     flow=flow->next;
-		
-                flow->next = (struct records*)malloc(sizeof(struct records));
-		flow = flow->next;
-		user_input();
-
-		flow->next = NULL;
-		printf("\n\t Seat booking succesful!");
-		printf("\n\t Seat number: Seat A-%d", x);
-		flow->seat_num = x;
-		return;
-	}
-}
-
-/**
-* @brief Function to cancel booking
+* @brief Function to recieve and collect passenger data
 * @return void
 */
 
-void cancel()
+
+void user_input()
 {
-	flow =init;  
-	
-	char p_no[7];
-     
-	 //deleting respective record
-	printf("\n\nTo delete record: Enter the passport number:\n");
-	scanf("%s",p_no);
-    
-    if(strcmp(init->p_no, p_no) == 0)
+	int age=0;
+    printf("\nEnter your Age: \n");
+    scanf("%d",&age);
+	if(age<5 || age>80)
 	{
-		trav = init;
-		init = init->next;
-		free(trav); 
-		printf("\n Booking has been deleted\n");
+		printf("\n Sorry, passenger is not suitable for air travel\n"); //not suitable for travel
 		return;
-
 	}
-
-	while (flow->next)      
-	{
-		if (strcmp(flow->next->p_no,p_no) == 0)
-		{
-			trav = flow->next;
-			flow->next = flow->next->next;
-			free(trav);	
-			printf("\nOther records have been deleted\n ");
-			return;
-		}
-		flow = flow -> next;
-	}
-	printf("\nWrong passport number\n");
-
+	else
+{
+    //collecting user data
+    printf("\n\t Passport Number:\n");
+    scanf("%s",flow->p_no);
+    printf("\n\t Name:\n");
+    scanf("%s",flow->name);
+    printf("\n\t Enter your email address:");
+    scanf("%s",flow->email);
+    printf("\nSelect Dietary option ie.Veg or Non-Veg?(1 for V, 2 for NV) \n");
+    scanf("%d",&flow->diet);
 }
-
-
-
+}
