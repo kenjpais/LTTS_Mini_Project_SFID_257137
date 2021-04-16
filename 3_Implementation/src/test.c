@@ -16,7 +16,7 @@ struct records
 
 struct records *trav;
 
-int main()
+void main()
 {   
     int ch,n=0;
 
@@ -69,6 +69,6 @@ int main()
 
 	} while (ch != 4); 
     
-    return 0;
+  
 
 }
