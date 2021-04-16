@@ -2,7 +2,7 @@
 #include<string.h>
 #include<stdlib.h>
 
-#include"flight_operations.h"
+#include"../inc/flight_operations.h"
 
 struct records
 {
