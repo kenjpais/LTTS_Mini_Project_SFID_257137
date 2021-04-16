@@ -5,7 +5,13 @@
 
 |Build|Code Quality|Unity|Git Inspector|Valgrind|
 |-----|------------|-----|-------------|--------|
-|![example workflow](https://github.com/kenjpais/LTTS_Mini_Project_SFID_257137/.github/workflows/c-build.yml/badge.svg)|
+|![C_C++ CI-passing-brightgreen](https://github.com/kenjpais/LTTS_Mini_Project_SFID_257137/.github/workflows/c-build.yml/badge.svg)|
+
+
+![C_C++ CI-passing-brightgreen](https://user-images.githubusercontent.com/81014114/115007733-eefa6580-9ec7-11eb-86a6-d31ff33bebe3.jpg)
+
+
+
 
 # Folder Structure
 
