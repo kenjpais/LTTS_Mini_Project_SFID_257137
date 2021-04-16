@@ -14,7 +14,7 @@
  * 
  */
 
-struct records *trav;
+//struct records *trav;
 /**
 *  reserves the seat on flight
 * @param[in] x
