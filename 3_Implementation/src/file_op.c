@@ -1,7 +1,7 @@
 #include<stdlib.h>
 #include<stdio.h>
 
-#include"flight_operations.h"
+#include"../inc/flight_operations.h"
 
 struct records
 {
