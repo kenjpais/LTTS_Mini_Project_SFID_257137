@@ -25,8 +25,6 @@ int main()
     void display();
     void file_op();
     
-    int ch,n=0;
-    
     init=flow=NULL;
 
     do
