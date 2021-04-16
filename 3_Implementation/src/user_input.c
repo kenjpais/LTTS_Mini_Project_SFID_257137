@@ -1,6 +1,5 @@
 #include<stdio.h>
 #include<stdlib.h>
-
 #include"../inc/flight_operations.h"
 
 struct records
