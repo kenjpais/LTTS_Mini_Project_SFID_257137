@@ -39,17 +39,17 @@ void book(int x)
 		init = flow = (struct records*)malloc(sizeof(struct records));
 
 
-		user_input();
+		user_input(); //collect user data
                 flow->next = NULL; 
 		printf("\n\t Booking successful!");
-		printf("\n\t Your seat number is: Seat A-%d", x);
+		printf("\n\t Seat number is: Seat A-%d", x); //verify seat number
 		flow->seat_num = x;
 		return; 
-		free(init);
+		free(init); //deallocation
 		free(flow);
 
 	}
-	else if (x > 15) 
+	else if (x > 15) //maximum capacity reached
 	{
 		printf("\n\t Sorry, Seats are Full\n");
 		return;
