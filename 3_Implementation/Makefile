@@ -7,18 +7,16 @@ BUILD = build
 # All source code files
 SRC = src/test.c\
 src/user_input.c\
-src/reserve.c\
+src/book.c\
 src/file_op.c\
 src/display.c\
-src/cancel.c\
 
 
 # All test source files
 TEST_SRC = src/test.c\
 src/user_input.c\
-src/reserve.c\
+src/book.c\
 src/file_op.c\
-src/cancel.c\
 test/display.c\
 unity/unity.c\
 
