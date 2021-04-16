@@ -20,7 +20,7 @@
 * @param[in] x
 * @return void
 */
-void book();
+void book(int x);
 
 /**
 *  Takes in the details of user input
