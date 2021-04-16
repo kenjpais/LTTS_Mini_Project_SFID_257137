@@ -18,7 +18,7 @@ struct records *trav;
 
 void main()
 {   
-    int ch,n=0;
+    int ch,n=1;
 
     void book(int x);
     void cancel();
