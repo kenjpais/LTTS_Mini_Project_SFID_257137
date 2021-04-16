@@ -1,6 +1,5 @@
 #include<stdlib.h>
 #include<stdio.h>
-
 #include"../inc/flight_operations.h"
 
 struct records
@@ -17,7 +16,7 @@ struct records
 
 void file_op()
 {
-    FILE *f = fopen("flight_records","w");
+    FILE *f = fopen("flight_records","w"); //file pointer
     if(!f)
 	{
 		printf("\n Error in opening file!");
@@ -32,7 +31,7 @@ void file_op()
 		fprintf(f, "%-15s",flow -> email);
 		flow = flow->next;
 	}
-	printf("\n\n\t Details have been saved to file");
-	fclose(f); 
+	printf("\n\n\t Details have been saved to file"); //SUCCESS
+	fclose(f);                                        //close file
 
 }
