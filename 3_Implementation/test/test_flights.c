@@ -1,7 +1,7 @@
 #include "../inc/flight_operations.h"
-#include "unity.h"
+#include "../unity/unity.h"
 #include<string.h>
-#include "unity_internals.h"
+#include "../unity/unity_internals.h"
 
 
 
@@ -37,7 +37,7 @@ strcpy(flow.email,"kenjpais@gmail.com");
 
 
 
-TEST_ASSERT_EQUAL_STRING("1234",stream.passport);
+TEST_ASSERT_EQUAL_STRING("1234",stream.p_no);
 TEST_ASSERT_EQUAL_STRING("ken",stream.name);
 TEST_ASSERT_EQUAL_STRING("kenjpais@gmail.com",stream.email);
 
