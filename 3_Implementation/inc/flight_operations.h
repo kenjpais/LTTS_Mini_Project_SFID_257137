@@ -20,7 +20,7 @@
 * @param[in] x
 * @return void
 */
-void reserve();
+void book();
 
 /**
 *  Takes in the details of user input
