@@ -31,7 +31,7 @@ void main()
 	{
 		            
 		printf("\n\n\t\t ********************************************************************");
-		printf("\n\t\t                  Airline Reservation System                   ");
+		printf("\n\t\t   ------------------------Airline Reservation System------------------");
 		printf("\n\t\t   *******************************************************************");
 		printf("\n\n\n\t\t Select an Action (1-4):");
 		printf("\n\n\t\t 1. Book a seat");
