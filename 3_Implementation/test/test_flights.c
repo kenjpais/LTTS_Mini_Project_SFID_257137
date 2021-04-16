@@ -21,7 +21,7 @@ struct records
     char name[15];
     int seat_num;
     int diet;
-    char email[15];
+    char email[40];
 	
 }flow;
 
