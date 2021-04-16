@@ -10,6 +10,7 @@ struct records
     char name[15];
     int seat_num;
     char email[15];
+    int diet;
     struct records *next;
 
 }*init,*flow;
@@ -21,6 +22,12 @@ struct records
 
 struct records *trav;
 void user_input();
+
+/**
+ * @brief Function to book a seat
+ * @param[in] x 
+ * @return void
+ */
 
 void book(int x) 
 {
@@ -44,7 +51,6 @@ void book(int x)
 	}
 	else if (x > 15) 
 	{
-		//capacity reached
 		printf("\n\t Sorry, Seats are Full\n");
 		return;
 	}
@@ -62,15 +68,14 @@ void book(int x)
 		flow->next = NULL;
 		printf("\n\t Seat booking succesful!");
 		printf("\n\t Seat number: Seat A-%d", x);
-		//Booking Successful
 		flow->seat_num = x;
 		return;
 	}
 }
 
-
 /**
 * @brief Function to cancel booking
+* @return void
 */
 
 void cancel()
@@ -78,7 +83,8 @@ void cancel()
 	flow =init;  
 	
 	char p_no[7];
-
+     
+	 //deleting respective record
 	printf("\n\nTo delete record: Enter the passport number:\n");
 	scanf("%s",p_no);
     
@@ -107,5 +113,6 @@ void cancel()
 	printf("\nWrong passport number\n");
 
 }
+
 
 
