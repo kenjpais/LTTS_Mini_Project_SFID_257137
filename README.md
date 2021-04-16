@@ -15,6 +15,7 @@
 
 
 Resources:
+https://github.com/stepin654321/MiniProject_Template/tree/master/MiniProject_C
 https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
 https://github.com/ejwa/gitinspector.git
 https://www.youtube.com/watch?v=bb1bTJtgXrI&t=599s
