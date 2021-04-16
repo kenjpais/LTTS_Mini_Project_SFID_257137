@@ -17,7 +17,7 @@ TEST_SRC = src/test.c\
 src/user_input.c\
 src/book.c\
 src/file_op.c\
-test/display.c\
+test/test_flights.c\
 unity/unity.c\
 
 # All include folders with header files
