@@ -44,6 +44,7 @@ void book(int x)
 	}
 	else if (x > 15) 
 	{
+		//capacity reached
 		printf("\n\t Sorry, Seats are Full\n");
 		return;
 	}
@@ -61,10 +62,16 @@ void book(int x)
 		flow->next = NULL;
 		printf("\n\t Seat booking succesful!");
 		printf("\n\t Seat number: Seat A-%d", x);
+		//Booking Successful
 		flow->seat_num = x;
 		return;
 	}
 }
+
+
+/**
+* @brief Function to cancel booking
+*/
 
 void cancel()
 {
