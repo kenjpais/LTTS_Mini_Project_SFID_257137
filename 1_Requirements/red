@@ -1,0 +1,20 @@
+# High Level Requirements:
+
+|ID	|Description|	Category|Status|
+|---|-----------|---------|------|
+|H01|User enabled to Login|Technical|IMPLEMENTED|
+|H02|User enabled to View Balance|Technical|IMPLEMENTED|
+|H03|User enabled to View Mini Statement|Technical|IMPLEMENTED|
+|H04|User enabled to Perform Bank Transfer|Technical|IMPLEMENTED|
+|H05|User enabled to Perform Multi Currency Transfer|Technical|IMPLEMENTED|
+
+# Low Level Requirements:
+
+|ID	|Description|H_ID|Status|
+|---|-----------|----|------|
+|L01|After performing transaction, Mini statement should be updated|H01|IMPLEMENTED|
+|L02|After depositing into account, Mini statement should be updated|H02 |IMPLEMENTED|
+|L03|After depositing into account, Balance should be updated|H05|IMPLEMENTED|
+|L04|Invalid ID should result in an error|H05|IMPLEMENTED|
+|L05|Multi Currency transfer conversion validation||IMPLEMENTED|
+L06 |Duplicate record validation|H03|IMPLEMENTED|
